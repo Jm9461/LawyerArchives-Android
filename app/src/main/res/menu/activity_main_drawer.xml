@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_profile"
+            android:title="پروفایل من" />
+        <item
+            android:id="@+id/nav_backup_restore"
+            android:icon="@drawable/ic_menu_backup"
+            android:title="پشتیبان‌گیری و بازیابی" />
+        <item
+            android:id="@+id/nav_reminders"
+            android:icon="@drawable/ic_menu_reminder"
+            android:title="یادآورها" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="تنظیمات" />
+    </group>
+
+    <item android:title="دسترسی سریع">
+        <menu>
+            <item
+                android:id="@+id/nav_meetings"
+                android:icon="@drawable/ic_menu_meetings"
+                android:title="جلسات" />
+            <item
+                android:id="@+id/nav_clients"
+                android:icon="@drawable/ic_menu_clients"
+                android:title="موکلین" />
+            <item
+                android:id="@+id/nav_cases"
+                android:icon="@drawable/ic_menu_cases"
+                android:title="پرونده‌ها" />
+            <item
+                android:id="@+id/nav_sessions"
+                android:icon="@drawable/ic_menu_court_sessions"
+                android:title="جلسات دادگاه" />
+            <item
+                android:id="@+id/nav_daily_tasks"
+                android:icon="@drawable/ic_menu_daily_task"
+                android:title="وظایف روزانه" />
+            <item
+                android:id="@+id/nav_documents"
+                android:icon="@drawable/ic_menu_documents"
+                android:title="اسناد" />
+            <item
+                android:id="@+id/nav_legal_deadlines"
+                android:icon="@drawable/ic_menu_calendar_alert"
+                android:title="مواعد قانونی" />
+            <item
+                android:id="@+id/nav_unanimity_of_procedure"
+                android:icon="@drawable/ic_menu_gavel_book"
+                android:title="آراء وحدت رویه" />
+            <item
+                android:id="@+id/nav_consultative_opinions"
+                android:icon="@drawable/ic_menu_comment_gavel"
+                android:title="نظریه های مشورتی" />
+            <item
+                android:id="@+id/nav_judicial_procedures"
+                android:icon="@drawable/ic_menu_scale_book"
+                android:title="رویه های قضایی" />
+            <item
+                android:id="@+id/nav_law_bank"
+                android:icon="@drawable/ic_menu_bank_book"
+                android:title="بانک قوانین" />
+            <item
+                android:id="@+id/nav_legal_needs"
+                android:icon="@drawable/ic_menu_question_mark_document"
+                android:title="نیازهای حقوقی" />
+            <item
+                android:id="@+id/nav_judicial_locator"
+                android:icon="@drawable/ic_menu_map_gavel"
+                android:title="مکان یاب قضایی" />
+            <item
+                android:id="@+id/nav_registration_services"
+                android:icon="@drawable/ic_menu_registration_services"
+                android:title="خدمات ثبتی" />
+        </menu>
+    </item>
+</menu>

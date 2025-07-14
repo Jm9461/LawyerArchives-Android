@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editClientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نام موکل"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editMeetingDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="تاریخ ملاقات (مثلاً 1403/05/10)"
+        android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/editTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="موضوع ملاقات"
+        android:inputType="textCapSentences"/>
+
+    <EditText
+        android:id="@+id/editDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="مدت زمان (مثلاً ۳۰ دقیقه)"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="محل ملاقات"
+        android:inputType="textPostalAddress"/>
+
+    <Button
+        android:id="@+id/saveMeetingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ذخیره تغییرات"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

@@ -1,0 +1,29 @@
+package com.lawyer_archives.activities
+
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.lawyer_archives.R // مطمئن شوید R را وارد کرده‌اید
+
+class SplashActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_splash) // این خط را اضافه یا از کامنت خارج کنید
+
+        val sharedPref = getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
+        val isProfileSetupDone = sharedPref.getBoolean("profile_setup_done", false)
+
+        // می‌توانید یک تاخیر کوتاه برای نمایش اسپلش اسکرین ایجاد کنید (اختیاری)
+        // handler.postDelayed({ ... }, 2000) // 2 ثانیه تاخیر
+
+        val intent: Intent
+        if (isProfileSetupDone) {
+            intent = Intent(this, LoginActivity::class.java)
+        } else {
+            intent = Intent(this, SetupProfileActivity::class.java)
+        }
+        startActivity(intent)
+        finish()
+    }
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="خانه" />
+        <item
+            android:id="@+id/nav_clients"
+            android:icon="@drawable/ic_menu_clients"
+            android:title="موکلین" />
+        <item
+            android:id="@+id/nav_cases"
+            android:icon="@drawable/ic_menu_cases"
+            android:title="پرونده‌ها" />
+        <item
+            android:id="@+id/nav_meetings"
+            android:icon="@drawable/ic_menu_meetings"
+            android:title="جلسات" />
+        <item
+            android:id="@+id/nav_sessions"
+            android:icon="@drawable/ic_menu_court_sessions"
+            android:title="جلسات دادگاه" />
+        <item
+            android:id="@+id/nav_daily_tasks"
+            android:icon="@drawable/ic_menu_daily_task"
+            android:title="وظایف روزانه" />
+        <item
+            android:id="@+id/nav_documents"
+            android:icon="@drawable/ic_menu_documents"
+            android:title="اسناد" />
+    </group>
+
+    <item android:title="ابزارها و تنظیمات">
+        <menu>
+            <item
+                android:id="@+id/nav_my_profile"
+                android:icon="@drawable/ic_menu_profile"
+                android:title="پروفایل من" />
+            <item
+                android:id="@+id/nav_useful_links"
+                android:icon="@drawable/ic_menu_link"
+                android:title="لینک‌های مفید" />
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_settings"
+                android:title="تنظیمات" />
+            <item
+                android:id="@+id/nav_about_app"
+                android:icon="@drawable/ic_menu_info"
+                android:title="درباره برنامه" />
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/ic_menu_contact"
+                android:title="تماس با ما" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_logout"
+                android:title="خروج" />
+        </menu>
+    </item>
+</menu>

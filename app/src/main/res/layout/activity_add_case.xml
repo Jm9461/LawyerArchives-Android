@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="عنوان پرونده"
+        android:inputType="textCapSentences"/>
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="شرح پرونده"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"/>
+
+    <EditText
+        android:id="@+id/editClientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="نام موکل"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/editCourtDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="تاریخ دادگاه (مثلاً 1403/05/10)"
+        android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/editStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="وضعیت پرونده (مثلاً در حال رسیدگی)"
+        android:inputType="textCapSentences"/>
+
+    <EditText
+        android:id="@+id/editAddedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="تاریخ افزودن (مثلاً 1403/05/01)"
+        android:inputType="date"/>
+
+    <Button
+        android:id="@+id/saveCaseButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ذخیره پرونده"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This file defines the paths that FileProvider can access.
+  It's crucial for sharing files securely from your app's internal storage.
+  The 'files-path' element refers to the 'files' directory within your app's private storage.
+  The 'name' attribute is an arbitrary identifier.
+  The 'path' attribute is the subdirectory within 'files' that FileProvider can access.
+  In this case, it's set to 'documents/' because CaseDocumentsActivity saves files into
+  the 'documents' subdirectory within filesDir.
+-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <files-path name="my_documents" path="documents/"/>
+</paths>
