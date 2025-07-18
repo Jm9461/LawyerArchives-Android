@@ -38,28 +38,30 @@ android {
 }
 
 dependencies {
-    // AndroidX Core KTX
-    implementation("androidx.core:core-ktx:1.13.1")
-    // AppCompat
-    implementation("androidx.appcompat:appcompat:1.7.0")
-    // Material Design
-    implementation("com.google.android.material:material:1.12.0")
-    // ConstraintLayout
-    implementation("androidx.constraintlayout:constraintlayout:2.2.1")
-    // RecyclerView
-    implementation("androidx.recyclerview:recyclerview:1.3.2") // نسخه به روز شده
-    // Activity KTX
-    implementation("androidx.activity:activity-ktx:1.9.0") // نسخه به روز شده
-    // Fragment KTX
-    implementation("androidx.fragment:fragment-ktx:1.8.0") // نسخه به روز شده
-    // CardView
-    implementation("androidx.cardview:cardview:1.0.0")
+        // AndroidX Core KTX
+        implementation("androidx.core:core-ktx:1.13.1")
+        // AppCompat
+        implementation("androidx.appcompat:appcompat:1.7.0")
+        // Material Design
+        implementation("com.google.android.material:material:1.12.0")
+        // ConstraintLayout
+        implementation("androidx.constraintlayout:constraintlayout:2.2.1")
+        // RecyclerView
+        implementation("androidx.recyclerview:recyclerview:1.3.2")
+        // Activity KTX
+        implementation("androidx.activity:activity-ktx:1.9.0")
+        // Fragment KTX
+        implementation("androidx.fragment:fragment-ktx:1.8.0")
+        // CardView
+        implementation("androidx.cardview:cardview:1.0.0")
 
-    // **** کتابخانه جدید تقویم شمسی از Maven Central ****
-    implementation("com.github.babak-pc:PersianCalender:1.3.3")
+        // **** کتابخانه جدید تقویم شمسی (جایگزین PersianCalender) ****
+        // این کتابخانه از Maven Central قابل دسترسی است و مشکلات دانلود را حل می کند
+        implementation("com.github.alireza-mj:PersianDate:1.0.0") // یا آخرین نسخه موجود
 
-    // وابستگی های تست
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-}
+        // وابستگی های تست
+        testImplementation("junit:junit:4.13.2")
+        androidTestImplementation("androidx.test.ext:junit:1.1.5")
+        androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    }
+    

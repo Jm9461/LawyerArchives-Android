@@ -8,14 +8,15 @@ pluginManagement {
 }
 
 // مدیریت وابستگی ها: مخازنی که Gradle برای دانلود کتابخانه ها جستجو می کند
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google() // مخزن گوگل برای کتابخانه های اندروید
-        mavenCentral() // مخزن مرکزی Maven
-        maven { url = uri("https://jitpack.io") } // برای کتابخانه هایی مانند PersianCalender
+    dependencyResolutionManagement {
+        repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+        repositories {
+            google() // مخزن گوگل برای کتابخانه های اندروید
+            mavenCentral() // مخزن مرکزی Maven
+            // خط زیر را حذف کنید:
+            // maven { url = uri("https://jitpack.io") }
+        }
     }
-}
 
 // نام پروژه اصلی شما
 rootProject.name = "LawyerArchives"
