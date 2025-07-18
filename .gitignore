@@ -1,0 +1,76 @@
+# Built application files
+*.apk
+*.aab
+*.ap_
+*.aar
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+.gradle/
+.idea/
+.cxx/
+.externalNativeBuild/
+.kotlin/
+captures/
+data-binding/
+incremental/
+kapt/
+generated/
+app/build/
+app/src/main/assets/
+local.properties # حاوی مسیر SDK شماست و نباید در Git باشد
+.DS_Store # فایل های macOS
+*.iml # فایل های ماژول IntelliJ/Android Studio
+.project
+.settings
+.classpath
+.factorypath
+.metadata
+.tooling/
+
+# Gradle files
+# gradlew و gradlew.bat و پوشه gradle/wrapper باید در Git باشند!
+# بنابراین، این خطوط را کامنت می کنیم تا نادیده گرفته نشوند:
+#!gradlew
+#!gradlew.bat
+#!gradle/wrapper/
+
+# Local configuration file (sdk location)
+# local.properties
+
+# Android Studio and IntelliJ IDEA files
+.idea/
+.idea_modules/
+.vscode/ # اگر از VS Code استفاده می کنید
+
+# Keystore files
+*.jks
+*.keystore
+
+# External native build files
+.cxx/
+.externalNativeBuild/
+
+# Debugging files
+*.hprof
+
+# Test output
+/test-results/
+
+# Crashlytics/Fabric
+fabric/
+
+# Google Services (Firebase)
+google-services.json
+
+# Any other files that should not be committed
+# مثلاً فایل های شخصی یا فایل های بزرگ که نباید در Git باشند
