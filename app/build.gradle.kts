@@ -57,7 +57,7 @@ dependencies {
 
         // **** کتابخانه جدید تقویم شمسی (جایگزین PersianCalender) ****
         // این کتابخانه از Maven Central قابل دسترسی است و مشکلات دانلود را حل می کند
-        implementation("com.github.alireza-mj:PersianDate:1.0.0") // یا آخرین نسخه موجود
+        implementation("com.github.babak-pc:PersianCalender:1.3.3") // یا آخرین نسخه موجود
 
         // وابستگی های تست
         testImplementation("junit:junit:4.13.2")

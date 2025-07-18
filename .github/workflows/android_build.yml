@@ -24,4 +24,6 @@
               with:
                 name: app-release-apk
                 path: app/build/outputs/apk/release/app-release.apk
-        
+            # دید برای پاکسازی کش اضافه شدیک کامنت ج
+            # Cache bust: 2025-07-18
+            
