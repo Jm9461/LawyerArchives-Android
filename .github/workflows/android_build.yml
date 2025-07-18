@@ -1,51 +1,27 @@
-# نام Workflow
-name: Android CI
-
-# چه زمانی این Workflow اجرا شود
-on:
-  # هر زمان که کدی به شاخه main یا master پوش شد
-  push:
-    branches: [ main, master ]
-  # یا هر زمان که یک Pull Request به شاخه main یا master ارسال شد
-  pull_request:
-    branches: [ main, master ]
-
-# Job ها (وظایف) که باید اجرا شوند
-jobs:
-  build:
-    # اجرا روی سیستم عامل Ubuntu (لینوکس)
-    runs-on: ubuntu-latest
-
-    # مراحل (Steps) Job
-    steps:
-    # مرحله 1: Checkout کردن کد پروژه از GitHub
-    - name: Checkout Code
-      uses: actions/checkout@v4
-
-    # مرحله 2: تنظیم JDK (Java Development Kit)
-    # از JDK 17 استفاده می شود که برای اندروید مدرن مناسب است
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
-      with:
-        java-version: '17'
-        distribution: 'temurin' # Adoptium Temurin یک توزیع معتبر OpenJDK است
-
-    # مرحله 3: اعطای مجوز اجرا به Gradle Wrapper
-    # این فایل gradlew را قابل اجرا می کند
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-
-    # مرحله 4: بیلد کردن پروژه با Gradle
-    # از دستور assembleRelease برای ساخت APK نهایی استفاده می شود
-    # --stacktrace برای جزئیات بیشتر در صورت خطا
-    # --no-daemon برای جلوگیری از مشکلات دیمون در محیط CI
-    - name: Build with Gradle
-      run: ./gradlew assembleRelease --stacktrace --no-daemon
-
-    # مرحله 5: آپلود APK ساخته شده به عنوان Artifact
-    # این مرحله فایل APK را پس از بیلد موفق، برای دانلود در دسترس قرار می دهد
-    - name: Upload APK
-      uses: actions/upload-artifact@v4
-      with:
-        name: app-release-apk # نام فایل Artifact
-        path: app/build/outputs/apk/release/app-release.apk # مسیر فایل APK در پروژه شما
+        name: Android CI
+        on:
+          push:
+            branches: [ main, master ]
+          pull_request:
+            branches: [ main, master ]
+        jobs:
+          build:
+            runs-on: ubuntu-latest
+            steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+            - name: Set up JDK 17
+              uses: actions/setup-java@v4
+              with:
+                java-version: '17'
+                distribution: 'temurin'
+            - name: Grant execute permission for gradlew
+              run: chmod +x gradlew
+            - name: Build with Gradle
+              run: ./gradlew assembleRelease --stacktrace --no-daemon
+            - name: Upload APK
+              uses: actions/upload-artifact@v4
+              with:
+                name: app-release-apk
+                path: app/build/outputs/apk/release/app-release.apk
+        
